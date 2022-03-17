@@ -2,15 +2,38 @@
   --darkBlue: #13335f;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
+  color: var(--darkBlue);
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 4.25rem;
 }
 
 ul {
@@ -29,11 +52,20 @@ a:focus-visible {
   outline: 2px solid black;
   outline-offset: 2px;
 }
+p {
+  line-height: 1.4;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.left-right {
+  animation: left-right 5s ease-in-out 0.1s infinite alternate;
+}
+.up-down {
+  animation: up-down 5s ease-in-out infinite alternate;
 }
 
 @keyframes App-logo-spin {
@@ -42,5 +74,23 @@ a:focus-visible {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(-25%);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(25%);
   }
 }
