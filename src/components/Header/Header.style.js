@@ -16,15 +16,21 @@ export const Header = styled.header`
 
 	a {
 		height: 100%;
+		display: inline-block;
 		color: #888888;
 	}
 
 	nav ul {
 		display: inline-flex;
+		align-items: center;
 		gap: 32px;
 		font-size: 13px;
 
 		li {
+			height: 52px;
+			&:not(:last-of-type) {
+				line-height: 52px;
+			}
 		}
 	}
 `;

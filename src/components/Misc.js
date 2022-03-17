@@ -8,8 +8,16 @@ export const Button = styled.a`
 	width: 368px;
 	display: inline-flex;
 	justify-content: center;
+	text-align: center;
 	align-items: center;
 	height: 52px;
+	max-height: 52px;
+	transition: 0.3s ease-in-out;
+
+	&:hover {
+		background: ${(props) =>
+			props.primary ? "#27add9" : "var(--darkerBlue)"};
+	}
 `;
 
 export const SectionDefault = styled.section`

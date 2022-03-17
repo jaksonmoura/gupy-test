@@ -70,7 +70,7 @@ export const Section = styled(SectionDefault)`
 	}
 
 	.asterisk {
-		bottom: -34px;
+		bottom: -44px;
 		left: 0px;
 		background: url(${heroanimate2});
 	}
