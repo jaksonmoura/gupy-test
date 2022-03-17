@@ -1,0 +1,46 @@
+:root {
+  --darkBlue: #13335f;
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
