@@ -3,7 +3,7 @@ import herobg1 from "../assets/hero_bg1.svg";
 import herobg2 from "../assets/hero_bg2.svg";
 import heroanimate1 from "../assets/hero_animate1.svg";
 import heroanimate2 from "../assets/hero_animate2.svg";
-import { SectionDefault } from "./Misc";
+import { SectionDefault } from "./Misc.style";
 
 export const Section = styled(SectionDefault)`
 	background: #fff6e5;

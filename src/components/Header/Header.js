@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../logo.svg";
-import { Button } from "../Misc";
+import { Button } from "../Misc.style";
 import * as S from "./Header.style";
 
 const Header = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Misc";
+import { Button } from "./Misc.style";
 import * as S from "./HeroSection.style";
 
 const HeroSection = () => {
