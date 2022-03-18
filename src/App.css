@@ -16,6 +16,7 @@ body {
   color: var(--darkBlue);
   overflow-x: hidden;
   scroll-padding-top: 100px;
+  position: relative;
 }
 
 .container {

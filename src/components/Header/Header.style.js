@@ -43,9 +43,15 @@ export const Header = styled.header`
 			z-index: 999;
 			padding: 1rem;
 			transform: translateX(110%);
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
 
 			&.open {
 				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
 			}
 
 			ul {
