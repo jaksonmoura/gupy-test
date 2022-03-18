@@ -19,7 +19,7 @@ export const Footer = styled.footer`
 		align-items: center;
 	}
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1180px) {
 		height: auto;
 		padding: 64px 0;
 		.container {
