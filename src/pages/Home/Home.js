@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection";
 import TimelineSection from "../../components/TimelineSection";
+import WhatSection from "../../components/WhatSection";
 import WhySection from "../../components/WhySection";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
 			<HeroSection />
 			<WhySection />
 			<TimelineSection />
+			<WhatSection />
 		</>
 	);
 };

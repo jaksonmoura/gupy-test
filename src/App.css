@@ -110,3 +110,12 @@ p {
     line-height: 1;
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
