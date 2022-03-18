@@ -5,13 +5,14 @@ export const Section = styled(SectionDefault)`
 	background: #fffaf0;
 
 	.star {
+		animation: rotate 60s linear infinite reverse;
+		transform-origin: 50% 50%;
 		#star_color {
 			clip-path: url(#star);
-			animation: rotate 30s linear infinite;
 		}
 
 		svg path {
-			animation: rotate 30s linear infinite;
+			animation: rotate 33s linear infinite;
 			transform-origin: 50% 50%;
 		}
 	}
