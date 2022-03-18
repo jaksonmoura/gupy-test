@@ -129,7 +129,6 @@ export const GridScrollMobile = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 30px);
 	justify-content: center;
-	margin-bottom: 32px;
 
 	opacity: 0;
 	visibility: hidden;
@@ -139,6 +138,7 @@ export const GridScrollMobile = styled.div`
 		opacity: 1;
 		visibility: visible;
 		pointer-events: all;
+		margin-bottom: 32px;
 	}
 
 	a {
