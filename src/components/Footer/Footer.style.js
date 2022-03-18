@@ -19,6 +19,22 @@ export const Footer = styled.footer`
 		align-items: center;
 	}
 
+	@media screen and (max-width: 992px) {
+		height: auto;
+		padding: 64px 0;
+		.logo {
+			margin-bottom: 2.5rem;
+		}
+		nav {
+			flex-direction: column;
+			gap: 8px;
+
+			.social-network {
+				margin-top: 3rem;
+			}
+		}
+	}
+
 	nav {
 		.footer-links {
 			display: inline-flex;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import herobg1 from "../assets/hero_bg1.svg";
-import herobg2 from "../assets/hero_bg2.svg";
-import heroanimate1 from "../assets/hero_animate1.svg";
-import heroanimate2 from "../assets/hero_animate2.svg";
+import herobg1 from "../assets/img/hero_bg1.svg";
+import herobg2 from "../assets/img/hero_bg2.svg";
+import heroanimate1 from "../assets/img/hero_animate1.svg";
+import heroanimate2 from "../assets/img/hero_animate2.svg";
 import { SectionDefault } from "./Misc.style";
 
 export const Section = styled(SectionDefault)`
@@ -14,14 +14,16 @@ export const Section = styled(SectionDefault)`
 		position: relative;
 	}
 	.hero-wrapper {
-		width: 560px;
+		width: 100%;
+		max-width: 560px;
+		z-index: 1;
 	}
 
 	&:before,
 	&:after {
 		content: "";
 		position: absolute;
-		z-index: 1;
+		z-index: 0;
 		background-size: contain !important;
 	}
 	&:before {
@@ -42,6 +44,14 @@ export const Section = styled(SectionDefault)`
 		width: 500px;
 		right: -200px;
 		background: url(${herobg1}) right center no-repeat;
+		@media screen and (max-width: 992px) {
+			top: 0;
+		}
+		@media screen and (max-width: 600px) {
+			width: 300px;
+			height: 160px;
+			right: -130px;
+		}
 	}
 
 	.data-inscricao {
@@ -61,12 +71,20 @@ export const Section = styled(SectionDefault)`
 		height: 110px;
 		z-index: 2;
 		background-size: contain !important;
+		@media screen and (max-width: 992px) {
+			top: -60px;
+			width: 50px;
+			height: 50px;
+		}
 	}
 
 	.circle {
 		top: -20px;
 		right: 0px;
 		background: url(${heroanimate1});
+		@media screen and (max-width: 992px) {
+			display: none;
+		}
 	}
 
 	.asterisk {

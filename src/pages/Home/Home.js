@@ -6,7 +6,7 @@ import WhySection from "../../components/WhySection";
 const Home = () => {
 	window.addEventListener("scroll", (e) => {
 		const sectionToAnimate = document.querySelectorAll(".scroll-animation");
-		if (window.innerWidth <= 992 || sectionToAnimate.length === 0) return;
+		// if (window.innerWidth <= 992 || sectionToAnimate.length === 0) return;
 
 		const winHeight = window.innerHeight;
 		let pageOffset = window.scrollY;

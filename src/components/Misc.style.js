@@ -14,6 +14,10 @@ export const Button = styled.a`
 	max-height: 52px;
 	transition: 0.3s ease-in-out;
 
+	@media screen and (max-width: 368px) {
+		width: 100%;
+	}
+
 	&:hover {
 		background: ${(props) =>
 			props.primary ? "#27add9" : "var(--darkerBlue)"};
@@ -39,7 +43,7 @@ export const GriddedSection = styled(SectionDefault)`
 		&:before {
 			content: "";
 			position: absolute;
-			width: 100vw;
+			width: 120vw;
 			height: 100%;
 			transition: transform 0.5s ease-in-out;
 			transform: ${(props) =>
@@ -50,6 +54,12 @@ export const GriddedSection = styled(SectionDefault)`
 			z-index: -1;
 			border-radius: ${(props) =>
 				props.reverse ? "400px 0 0 400px" : "0 400px 400px 0"};
+
+			@media screen and (max-width: 992px) {
+				left: -5vw !important;
+				border-radius: ${(props) =>
+					props.reverse ? "400px 0 0 400px" : "0"};
+			}
 		}
 	}
 
@@ -84,12 +94,16 @@ export const Grid3Columns = styled.div`
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1rem;
 	margin-bottom: 50px;
+	scroll-behavior: smooth;
 
 	@media screen and (max-width: 992px) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, 100%);
+		overflow-x: scroll;
+		overflow-y: hidden;
 		justify-items: center;
+		scroll-snap-type: x mandatory;
 		gap: 3rem;
+		margin-bottom: 32px;
 	}
 `;
 
@@ -102,8 +116,40 @@ export const GridItem = styled.div`
 	justify-items: center;
 	align-content: flex-start;
 	max-width: 400px;
+	@media screen and (max-width: 992px) {
+		scroll-snap-align: center;
+	}
 	p,
 	h3 {
 		margin: 0;
+	}
+`;
+
+export const GridScrollMobile = styled.div`
+	display: grid;
+	grid-template-columns: repeat(3, 30px);
+	justify-content: center;
+	margin-bottom: 32px;
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+
+	@media screen and (max-width: 992px) {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+
+	a {
+		height: 12px;
+		width: 12px;
+		gap: 12px;
+		background: #fff;
+		border-radius: 12px;
+
+		&.current {
+			background: #888888;
+		}
 	}
 `;
