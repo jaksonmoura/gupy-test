@@ -90,9 +90,11 @@ export const Header = styled.header`
 
 		ul {
 			display: inline-flex;
-			align-items: center;
+			align-items: flex-start;
 			gap: 32px;
 			font-size: 13px;
+			width: 100%;
+			padding: 0 16px;
 
 			li {
 				height: 52px;
