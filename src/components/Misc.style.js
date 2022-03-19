@@ -5,7 +5,8 @@ export const Button = styled.a`
 	background: ${(props) => (props.primary ? "#27add9" : "var(--darkBlue)")};
 	border-radius: 8px;
 	color: #fff !important;
-	width: 368px;
+	width: 100%;
+	max-width: 368px;
 	display: inline-flex;
 	justify-content: center;
 	text-align: center;
@@ -28,7 +29,7 @@ export const SectionDefault = styled.section`
 	position: relative;
 	width: 100%;
 	/* height: 520px; */
-	padding: 64px 0;
+	padding: 64px 32px;
 	display: inline-flex;
 	justify-content: center;
 `;
@@ -37,7 +38,7 @@ export const GriddedSection = styled(SectionDefault)`
 	padding: ${(props) => (props.reverse ? "32px 0 125px 0" : "64px 0 0 0")};
 	.container {
 		position: relative;
-		padding: 46px 0;
+		padding: 46px 32px;
 
 		text-align: center;
 		&:before {
