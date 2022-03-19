@@ -7,6 +7,7 @@ export const Header = styled.header`
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 32px;
 
 	#menu,
 	#menu-overlay {
