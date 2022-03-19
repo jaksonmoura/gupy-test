@@ -1,4 +1,5 @@
 import React from "react";
+import CategoriesSection from "../../components/CategoriesSection";
 import HeroSection from "../../components/HeroSection";
 import TimelineSection from "../../components/TimelineSection";
 import WhatSection from "../../components/WhatSection";
@@ -6,10 +7,10 @@ import WhySection from "../../components/WhySection";
 
 const Home = () => {
 	window.addEventListener("scroll", (e) => {
+		const winHeight = window.innerHeight;
 		const sectionToAnimate = document.querySelectorAll(".scroll-animation");
 		// if (window.innerWidth <= 992 || sectionToAnimate.length === 0) return;
 
-		const winHeight = window.innerHeight;
 		let pageOffset = window.scrollY;
 
 		sectionToAnimate.forEach((section) => {
@@ -25,6 +26,7 @@ const Home = () => {
 			<WhySection />
 			<TimelineSection />
 			<WhatSection />
+			<CategoriesSection />
 		</>
 	);
 };
