@@ -8,7 +8,7 @@ export const Section = styled(SectionDefault)`
 	height: 475px;
 
 	.star {
-		animation: rotate 30s linear infinite reverse;
+		animation: rotate 30s linear infinite;
 		transform-origin: 50% 50%;
 		will-change: transform;
 		width: 250px;
@@ -23,7 +23,7 @@ export const Section = styled(SectionDefault)`
 
 		svg path {
 			will-change: transform;
-			animation: rotate 5s linear infinite;
+			animation: rotate 15s linear infinite reverse;
 			transform-origin: 50% 50%;
 		}
 	}
@@ -43,7 +43,9 @@ export const Section = styled(SectionDefault)`
 		left: 0;
 		z-index: -1;
 		img {
+			height: 100%;
 			width: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -56,7 +58,7 @@ export const Section = styled(SectionDefault)`
 		transition: all 0.5s ease-in-out;
 		z-index: 1;
 
-		mask: url(rh_carrousel_star.svg) no-repeat center / contain;
+		mask: url(rh_carrousel_star.svg) no-repeat center / cover;
 	}
 
 	@media screen and (max-width: 1100px) {
@@ -65,12 +67,20 @@ export const Section = styled(SectionDefault)`
 		.container {
 			grid-template-columns: 1fr;
 			grid-template-rows: auto auto;
-			gap: 32px;
+			gap: 16px;
+			text-align: center;
 		}
 
 		.carrousel-star {
 			left: 55%;
 			bottom: 48px;
+		}
+
+		.star {
+			left: -90px;
+			img {
+				transform: scale(0.5);
+			}
 		}
 	}
 
@@ -163,12 +173,12 @@ export const CarrouselSlides = styled.div`
 		a.slide {
 			&:nth-of-type(1) img,
 			&:nth-of-type(3) img {
-				width: 45vw;
+				width: 40vw;
 				max-width: 300px;
 			}
 			&:nth-of-type(2) img,
 			&:nth-of-type(4) img {
-				height: 45vw;
+				height: 40vw;
 				max-height: 300px;
 			}
 			&:nth-of-type(1) {

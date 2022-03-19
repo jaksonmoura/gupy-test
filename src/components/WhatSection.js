@@ -66,10 +66,10 @@ const WhatSection = () => {
 				<div>
 					<h2>O que é um RH que inspira?</h2>
 					<p>
-						Um RH que inspira é aquele que entende que o colaborador
-						é a alma do negócio e investe seus recursos e esforços
-						para que ele tenha uma experiência incrível na sua
-						jornada profissional.
+						"Um RH que inspira é aquele que entende que o
+						colaborador é a alma do negócio e investe seus recursos
+						e esforços para que ele tenha uma experiência incrível
+						na sua jornada profissional."
 					</p>
 				</div>
 				<S.Carrousel>
