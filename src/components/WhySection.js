@@ -15,9 +15,6 @@ const WhySection = () => {
 		scrollItems.forEach((item, i) => {
 			item.addEventListener("click", (e) => {
 				e.preventDefault();
-				let gridItem = document.querySelector(
-					`[data-id=${item.getAttribute("data-target")}]`,
-				);
 				scrollItems.forEach((i) => i.classList.remove("current"));
 				item.classList.add("current");
 				grid.scrollLeft = i > 0 ? gridWidth * i : 0;
