@@ -37,11 +37,11 @@ export const Section = styled(SectionDefault)`
 
 	.section-bar {
 		position: absolute;
-		bottom: -26px;
+		bottom: 0;
 		height: 26px;
 		width: 100%;
 		left: 0;
-		z-index: -1;
+		z-index: 0;
 		img {
 			height: 100%;
 			width: 100%;

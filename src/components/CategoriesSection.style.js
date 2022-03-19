@@ -4,6 +4,13 @@ import { SectionDefault } from "./Misc.style";
 export const Section = styled(SectionDefault)`
 	h2 {
 		text-align: center;
+		margin-bottom: 64px;
+	}
+
+	@media screen and (max-width: 1100px) {
+		h2 {
+			margin-bottom: 32px;
+		}
 	}
 `;
 
