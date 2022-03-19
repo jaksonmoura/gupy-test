@@ -71,10 +71,10 @@ p {
 
 @media (prefers-reduced-motion: no-preference) {
   .left-right {
-    animation: left-right 15s ease-in-out 0.1s infinite alternate;
+    animation: left-right 12s ease-in-out 0.1s infinite alternate;
   }
   .up-down {
-    animation: up-down 15s ease-in-out infinite alternate;
+    animation: up-down 12s ease-in-out infinite alternate;
   }
 }
 

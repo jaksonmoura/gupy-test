@@ -34,6 +34,9 @@ export const Section = styled(SectionDefault)`
 		width: 600px;
 		left: -300px;
 		background: url(${herobg2}) no-repeat;
+		@media screen and (max-width: 500px) {
+			bottom: 128px;
+		}
 	}
 
 	&:after {

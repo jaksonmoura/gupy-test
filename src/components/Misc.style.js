@@ -88,6 +88,10 @@ export const GriddedSection = styled(SectionDefault)`
 			transform: translateX(0);
 		}
 	}
+
+	@media screen and (max-width: 1100px) {
+		padding: ${(props) => (props.reverse ? "32px 0 64px 0" : "64px 0 0 0")};
+	}
 `;
 
 export const Grid3Columns = styled.div`

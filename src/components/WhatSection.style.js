@@ -113,7 +113,7 @@ export const CarrouselControls = styled.div`
 	width: 176px;
 
 	@media screen and (max-width: 1100px) {
-		width: auto;
+		width: fit-content;
 		flex-direction: row;
 	}
 `;
@@ -236,4 +236,8 @@ export const CarrouselTitle = styled.span`
 	font-size: 1.6rem;
 	width: 125px;
 	text-align: center;
+
+	@media screen and (max-width: 1100px) {
+		width: 150px;
+	}
 `;
