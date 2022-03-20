@@ -9,8 +9,6 @@ const Home = () => {
 	window.addEventListener("scroll", (e) => {
 		const winHeight = window.innerHeight;
 		const sectionToAnimate = document.querySelectorAll(".scroll-animation");
-		const elementsToEnlarge =
-			document.querySelectorAll(".enlarge-animation");
 		// if (window.innerWidth <= 992 || sectionToAnimate.length === 0) return;
 
 		let pageOffset = window.scrollY;
@@ -18,7 +16,7 @@ const Home = () => {
 		sectionToAnimate.forEach((section) => {
 			if (pageOffset > section.offsetTop - winHeight / 2) {
 				section.classList.add("show");
-				elementsToEnlarge.forEach((el) => {
+				section.querySelectorAll(".enlarge-animation").forEach((el) => {
 					el.classList.add("show");
 				});
 			}
