@@ -15,9 +15,10 @@ export const Section = styled(SectionDefault)`
 `;
 
 export const Categories = styled.div`
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
+	justify-content: center;
 `;
 
 export const Category = styled.a`
@@ -30,6 +31,8 @@ export const Category = styled.a`
 	font-size: 2.13rem;
 	height: 144px;
 	color: #fff;
+	width: 100%;
+	max-width: 270px;
 
 	&:hover {
 		opacity: 0.9;

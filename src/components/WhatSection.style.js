@@ -70,6 +70,7 @@ export const Section = styled(SectionDefault)`
 			grid-template-rows: auto auto;
 			gap: 16px;
 			text-align: center;
+			padding-left: 0;
 		}
 
 		.carrousel-star {
