@@ -32,7 +32,10 @@ const TimelineSection = () => {
 		<S.GriddedSection reverse className="scroll-animation">
 			<div className="container">
 				<h2>Confira a timeline do prêmio</h2>
-				<S.Grid3Columns id="grid-timeline">
+				<S.Grid3Columns
+					id="grid-timeline"
+					className="enlarge-animation"
+				>
 					<S.GridItem data-id="timeline-1" compact>
 						<img src={timeline1} alt="" />
 						<p>

@@ -100,6 +100,7 @@ export const Grid3Columns = styled.div`
 	gap: 1rem;
 	margin-bottom: 50px;
 	scroll-behavior: smooth;
+	position: relative;
 
 	@media screen and (max-width: 992px) {
 		grid-template-columns: repeat(3, 100%);
@@ -109,6 +110,30 @@ export const Grid3Columns = styled.div`
 		scroll-snap-type: x mandatory;
 		gap: 3rem;
 		margin-bottom: 32px;
+
+		&#grid-timeline:before {
+			opacity: 0;
+		}
+	}
+
+	&.show {
+		&#grid-timeline:before {
+			max-width: 100%;
+		}
+	}
+
+	&#grid-timeline:before {
+		position: absolute;
+		content: "";
+		top: 40px;
+		left: 170px;
+		width: calc(100% - 350px);
+		max-width: 0;
+		height: 5px;
+		background: var(--darkBlue);
+		z-index: 0;
+		transition: all 0.5s ease-in-out;
+		transition-delay: 0.5s;
 	}
 `;
 
@@ -121,6 +146,7 @@ export const GridItem = styled.div`
 	justify-items: center;
 	align-content: flex-start;
 	max-width: 400px;
+	position: relative;
 	@media screen and (max-width: 992px) {
 		scroll-snap-align: center;
 	}
@@ -128,6 +154,19 @@ export const GridItem = styled.div`
 	h3 {
 		margin: 0;
 	}
+
+	/* ${(props) => !props.compact} {
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 50%;
+			width: 100%;
+			height: 5px;
+			background: red;
+			z-index: 1;
+		}
+	} */
 `;
 
 export const GridScrollMobile = styled.div`
