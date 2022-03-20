@@ -33,6 +33,7 @@ export const Section = styled(SectionDefault)`
 		grid-template-columns: 360px auto;
 		gap: 120px;
 		z-index: 1;
+		padding-left: 64px;
 	}
 
 	.section-bar {
